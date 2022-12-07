@@ -1,0 +1,15 @@
+$ cd /
+$ ls
+1000 aaa
+100 bb
+dir a
+dir b
+$ cd b
+$ ls
+5 dd
+50 ee
+$ cd ..
+$ cd a
+$ ls
+99 xd
+98 xd1
