@@ -1,4 +1,7 @@
-import re
-a = "29-47,22-32"
-b = re.findall(r'\d+', a)
-print(b)
+a = 0
+def do():
+    global a
+    a += 1
+
+do()
+print(a)
