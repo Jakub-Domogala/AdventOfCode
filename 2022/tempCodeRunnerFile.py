@@ -1,2 +1,2 @@
-50:
-    #     break
+
+        visited[xt][yt] = True

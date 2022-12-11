@@ -36,7 +36,6 @@ visited = [[False for _ in range(n)] for _ in range(n)]
 visited[middle][middle] = True
 # starting position for head and tail
 xh, yh, xt, yt = tmp, tmp, tmp, tmp
-# print("dir", direction)
 
 def update_tail():
     global xh, yh, xt, yt, visited
@@ -69,8 +68,6 @@ for i, x in enumerate(stepsize):
         stop += 1
         update_head(direction[i])
         update_tail()
-    # if stop > 50:
-    #     break
 
 result = count_true()
 
