@@ -1,7 +1,14 @@
-a = 0
-def do():
-    global a
-    a += 1
+from queue import PriorityQueue
 
-do()
-print(a)
+q = PriorityQueue()
+
+q.put(1)
+q.put(1)
+q.put(2)
+
+
+print(q.get())
+print(q.get())
+print(q.empty())
+print(q.get())
+print(q.empty())
