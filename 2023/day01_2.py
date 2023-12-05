@@ -12,7 +12,7 @@ digit_mapping = {
     'eight': '8',
     'nine': '9'
 }
-with open("input1.txt") as file:
+with open("input01.txt") as file:
     for line in file:        
         first = [int(digit_mapping.get(digit.lower(), digit)) if digit in digit_mapping else int(digit) for digit in 
                  re.findall(r'\d|one|two|three|four|five|six|seven|eight|nine', line, re.IGNORECASE)][0]

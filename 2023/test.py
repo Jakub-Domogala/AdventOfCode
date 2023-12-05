@@ -1,7 +1,5 @@
-import re
+from functools import reduce
 
-input_string = "abac"
-
-# Extract numeric digits and digits written as words
-digits = re.findall(r'.*(ab|ba).*$', input_string, re.IGNORECASE)
-print(digits)
+my_list = [2, 3, 4, 5]
+result = reduce(lambda x, y: x * y, my_list)
+print(result)
